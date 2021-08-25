@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-pagina3',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pagina3Page implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private navControl: NavController) { 
+
+  }
 
   ngOnInit() {
   }
 
+  volverInicio(){
+    this.router.navigate(['/home'])
+  }
 }

@@ -1,34 +1,59 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Home
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button color="primary" routerLink = "/pagina1">Página</ion-button>
-  <ion-button color="secondary" (click) = "irPagina2()" >Página 2</ion-button>
-  <ion-button color="tertiary" (click) = "irPagina3()">Página 3</ion-button>
 
- 
+  <div class="titulo">Formulario Ingreso de Datos</div>
+
+<div class="contenido">
+<!-- Etiqueta Flotante -->
+  <ion-item>
+    <ion-label position="floating">Nombre Completo</ion-label>
+    <ion-input placeholder ="Ingrese su nombre" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Rut</ion-label>
+    <ion-input placeholder ="Ingrese su nombre" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Comentario</ion-label>
+    <ion-input placeholder ="Ingrese su nombre" ></ion-input>
+  </ion-item>
+
+  <!-- Imprima el valor -->
+  <ion-label>{{valor}}</ion-label>
+</div>
+  <ion-button color="primary" routerLink="/pagina1">Página 1</ion-button>
+  <ion-button color="secondary" (click)="irPagina2()">Página 2</ion-button>
+  <ion-button color="tertiary" (click)="irPagina3()">Página 3</ion-button>
+
   <ion-badge>99</ion-badge>
 
-<!-- Colors -->
-<ion-badge color="primary">11</ion-badge>
-<ion-badge color="secondary">22</ion-badge>
-<ion-badge color="tertiary">33</ion-badge>
-<ion-badge color="success">44</ion-badge>
-<ion-badge color="warning">55</ion-badge>
-<ion-badge color="danger">66</ion-badge>
-<ion-badge color="light">77</ion-badge>
-<ion-badge color="medium">88</ion-badge>
-<ion-badge color="dark">99</ion-badge>
+  <!-- Colors -->
+  <ion-badge color="primary">11</ion-badge>
+  <ion-badge color="secondary">22</ion-badge>
+  <ion-badge color="tertiary">33</ion-badge>
+  <ion-badge color="success">44</ion-badge>
+  <ion-badge color="warning">55</ion-badge>
+  <ion-badge color="danger">66</ion-badge>
+  <ion-badge color="light">77</ion-badge>
+  <ion-badge color="medium">88</ion-badge>
+  <ion-badge color="dark">99</ion-badge>
 
-<!-- Item with badge on left and right -->
-<ion-item>
-  <ion-badge slot="start">11</ion-badge>
-  <ion-label>x4leqxinn uwu</ion-label>
-  <ion-badge slot="end">22</ion-badge>
-</ion-item>
+  <!-- Item with badge on left and right -->
+  <ion-item>
+    <ion-badge slot="start">11</ion-badge>
+    <ion-label>x4leqxinn uwu</ion-label>
+    <ion-badge slot="end">22</ion-badge>
+  </ion-item>
+
+
+
 </ion-content>

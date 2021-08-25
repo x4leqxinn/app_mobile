@@ -9,6 +9,10 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  
+  // Atributos o variables de la clase
+
+  valor:String = "Hola Mundo";
 
   // Indicamos un Router
   // Indicamos un NavControl
