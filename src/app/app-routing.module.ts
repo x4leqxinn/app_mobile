@@ -16,7 +16,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/pagina1/pagina1.module').then( m => m.Pagina1PageModule)
   },
   {
-    path: 'pagina2',
+    //Le indicamos que puede recibir un parametro por url
+    path: 'pagina2/:valor',
     loadChildren: () => import('./pages/pagina2/pagina2.module').then( m => m.Pagina2PageModule)
   },
   {

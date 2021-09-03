@@ -58,15 +58,20 @@ export class HomePage {
   guardar(){
     // let var_rut = this.persona.value;
     // alert('valor persona ' + var_rut);
+
+    // Creamos una entidad de persona
     this.perso = {
       rut:this.persona.controls.formRut.value,
       nombre:this.persona.controls.formNombreCompleto.value,
       edad:this.persona.controls.formEdad.value
     };
 
-    console.log(this.perso);
-    alert('El nombre es ' + this.perso.rut);
+    // console.log(this.perso);
+    // alert('El nombre es ' + this.perso.rut);
     this.lista_personas.push(this.perso);
+    var datos = this.lista_personas;
+    localStorage.setItem('misdatos',JSON.stringify(datos));
+    alert("guardó");
   }
 
   eliminar(){
